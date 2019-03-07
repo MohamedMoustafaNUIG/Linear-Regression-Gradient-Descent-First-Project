@@ -4,37 +4,21 @@ public class Main
 {
     private static double theta0,theta1,theta2,theta3;//parameters
 
-    private static ArrayList<Double> expectedOutput=new ArrayList();//output
+    private static ArrayList<Double> expectedOutput=new ArrayList();//output,sepal length
 
-    private static ArrayList<Double> attribute1=new ArrayList();//input1
-    private static ArrayList<Double> attribute2=new ArrayList();//input2
-    private static ArrayList<Double> attribute3=new ArrayList();//input3
+    private static ArrayList<Double> attribute1=new ArrayList();//input1,sepal width
+    private static ArrayList<Double> attribute2=new ArrayList();//input2,petal length
+    private static ArrayList<Double> attribute3=new ArrayList();//input3,petal width
 
     private static ArrayList<Double> actualOutput=new ArrayList();//actualOutput
     private static double accuracy;
-
-    public static double getTheta0() {
-        return theta0;
-    }
-
-    public static void setTheta0(double theta0) {
-        Main.theta0 = theta0;
-    }
-
-    public static double getTheta1() {
-        return theta1;
-    }
-
-    public static void setTheta1(double theta1) {
-        Main.theta1 = theta1;
-    }
 
     public static void main(String[] args)
     {
         theta0=theta1=theta2=theta3=0;
         accuracy=0;
         try{
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Mohamad\\Desktop\\Linear Regression\\iris2.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\...\\iris.txt"));
             for(int i=0;i<50;i++)
             {
                 String[] str=br.readLine().split(" ");
@@ -58,9 +42,9 @@ public class Main
 
     public static double costFunction()
     {
-        int m = attribute2.size();
+        double m = 50.0;
 
-        double multBy = 1/(2*m);
+        double multBy = 1.0/(2*m);
         double sum=0;
 
         double temp=0;
@@ -198,10 +182,10 @@ public class Main
         double sum=0;
         for(int i=40;i<50;i++)
         {
-            double prediction=
+           double prediction=
                     theta0+(theta1*attribute1.get(i))+(theta2*attribute2.get(i))+(theta3*attribute3.get(i));
            actualOutput.add(prediction);
-            sum+=Math.min(prediction,expectedOutput.get(i))/Math.max(prediction,expectedOutput.get(i));
+           sum+=Math.min(prediction,expectedOutput.get(i))/Math.max(prediction,expectedOutput.get(i));
         }
 
         accuracy=(sum/10)*100;
