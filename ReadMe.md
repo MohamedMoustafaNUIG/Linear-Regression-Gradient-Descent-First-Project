@@ -2,7 +2,7 @@
 
 This is a machine learning project. It uses a Supervised Learning algorithm known as (Multivariate) Linear Regression to take several attributes as inputs (in this case three attributes) and uses a hypothesis function to map those inuts onto an output over a continuous range of values (the real numbers).
 
-It uses the Squared Error Cost Function along with the Gradient Descent algorithm to calculate appropriate parameters (&theta;<sub>i</sub>) for the following hypothesis function:
+It uses the Squared Error Cost Function along with the Batch Gradient Descent algorithm to calculate appropriate parameters (&theta;<sub>i</sub>) for the following hypothesis function:
 
 h<sub>&theta;</sub> = &theta;<sub>o</sub> + &theta;<sub>1</sub>att1 + &theta;<sub>2</sub>att2 + &theta;<sub>3</sub>att3
 
