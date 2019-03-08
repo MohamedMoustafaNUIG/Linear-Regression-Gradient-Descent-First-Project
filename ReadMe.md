@@ -14,7 +14,7 @@ The data used in this case is from the Iris dataset
 
 (Link: https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv)
 
-The dataset contains the Sepal length and width and the Petal  length and width of 150 Iris flowers of three different species.
+The dataset contains the Sepal length and width and the Petal length and width (in that order) of 150 Iris flowers of three different species.
 
 I decided to focus only on the Setosa species' data as different species might have different trends.
 
