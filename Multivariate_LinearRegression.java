@@ -79,8 +79,8 @@ public class Multivariate_LinearRegression
             {
                 case 0:break;
                 case 1:temp*=attribute1.get(i);break;
-                case 2:temp*=attribute1.get(i);break;
-                case 3:temp*=attribute1.get(i);break;
+                case 2:temp*=attribute2.get(i);break;
+                case 3:temp*=attribute3.get(i);break;
             }
             sum=sum+temp;
             temp=0;
