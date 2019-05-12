@@ -17,7 +17,7 @@ public class Multivariate_LinearRegression
         theta0=theta1=theta2=theta3=0;
         accuracy=0;
         try{
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Mohamad\\Desktop\\For up\\Linear-Regression-Gradient-Descent-First-Project\\iris.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\...\\iris.txt"));
             for(int i=0;i<50;i++)
             {
                 String[] str=br.readLine().split(" ");
