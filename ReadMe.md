@@ -26,10 +26,10 @@ I choose to let the Sepal Length to be the output.
 
 ### Training and Evaluating
 
-Of the 50 records, 40 were used by the Gradient descent method to find good values for the parameters (&theta;<sub>i</sub>). The final 10 were used to evaluate how accurate the hypothesis function has become after training, by comparing the predictions with the actual values. In this specific case, the predictions were nearly 95% accurate. A larger and more varied dataset might give different results.
+Of the 50 records, 40 were used by the Gradient descent method to find good values for the parameters (&theta;<sub>i</sub>). The final 10 were used to evaluate how accurate the hypothesis function has become after training, by comparing the predictions with the actual values. In this specific case, the predictions were nearly 95%(Java) - 89%(Python) accurate. A larger and more varied dataset might give different results.
 
 ### Versions
 
-* Main.java is the initial java version. It reads data from a txt file and has separate partial derivative method for each parameter
+* Multivariate_LinearRegression.java is the initial Java version of the program. It reads data from a txt file using regular Java buffer reader and uses ArrayLists for storing and accessing the data.
 
-* Multivariate_LinearRegression.py is the "polished" python version. It uses the Pandas library for reading an accessing the dataset from a csv file. The partial derivatives have been grouped in a single function, making this version much easier to change if less/more attributes are to be used for input. Due to how Python deals with numbers, the step variable "alpha" had to be lowered to 0.13 (Java version had 0.5) as any higher would lead to the partial derivatives diverging
+* Multivariate_LinearRegression.py is a python version of this program. It uses the Pandas library for reading and accessing the dataset from a csv file.
