@@ -33,3 +33,5 @@ Of the 50 records, 40 were used by the Gradient descent method to find good valu
 * Multivariate_LinearRegression.java is the initial Java version of the program. It reads data from a txt file using regular Java buffer reader and uses ArrayLists for storing and accessing the data.
 
 * Multivariate_LinearRegression.py is a python version of this program. It uses the Pandas library for reading and accessing the dataset from a csv file.
+
+* Generic Multivariate Linear Regression.ipynb is a Jupyter notebook implementation of this project, with some additional tweaks (MinMax normalization and max_iter for training).
